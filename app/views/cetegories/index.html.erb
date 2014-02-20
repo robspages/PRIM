@@ -1,0 +1,33 @@
+<h1>Listing cetegories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Catid</th>
+      <th>Parentcatid</th>
+      <th>Isroot</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cetegories.each do |cetegory| %>
+      <tr>
+        <td><%= cetegory.name %></td>
+        <td><%= cetegory.catID %></td>
+        <td><%= cetegory.parentCatID %></td>
+        <td><%= cetegory.isRoot %></td>
+        <td><%= link_to 'Show', cetegory %></td>
+        <td><%= link_to 'Edit', edit_cetegory_path(cetegory) %></td>
+        <td><%= link_to 'Destroy', cetegory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cetegory', new_cetegory_path %>

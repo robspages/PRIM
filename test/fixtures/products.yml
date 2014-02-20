@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  productType_id: 1
+  shortDescription: MyString
+  longDescription: MyString
+  upc: MyString
+  style_id: MyString
+  sku: MyString
+
+two:
+  title: MyString
+  productType_id: 1
+  shortDescription: MyString
+  longDescription: MyString
+  upc: MyString
+  style_id: MyString
+  sku: MyString

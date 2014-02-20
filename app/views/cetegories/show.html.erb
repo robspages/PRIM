@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cetegory.name %>
+</p>
+
+<p>
+  <strong>Catid:</strong>
+  <%= @cetegory.catID %>
+</p>
+
+<p>
+  <strong>Parentcatid:</strong>
+  <%= @cetegory.parentCatID %>
+</p>
+
+<p>
+  <strong>Isroot:</strong>
+  <%= @cetegory.isRoot %>
+</p>
+
+<%= link_to 'Edit', edit_cetegory_path(@cetegory) %> |
+<%= link_to 'Back', cetegories_path %>

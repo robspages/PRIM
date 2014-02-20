@@ -1,0 +1,33 @@
+<%= form_for(@cetegory) do |f| %>
+  <% if @cetegory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cetegory.errors.count, "error") %> prohibited this cetegory from being saved:</h2>
+
+      <ul>
+      <% @cetegory.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :catID %><br>
+    <%= f.text_field :catID %>
+  </div>
+  <div class="field">
+    <%= f.label :parentCatID %><br>
+    <%= f.text_field :parentCatID %>
+  </div>
+  <div class="field">
+    <%= f.label :isRoot %><br>
+    <%= f.check_box :isRoot %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
